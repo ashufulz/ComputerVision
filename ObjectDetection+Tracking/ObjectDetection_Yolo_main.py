@@ -2,24 +2,9 @@ import cv2
 import numpy as np
 
 # Variable Initialization
-video = 'path/to/video'
-output_video_path = 'path/to/output/folder'
-
-file_name = video.split("\\")[-1].split('.')[0]         # from 'sample.mp4' just take 'sample'
-file_ext = video.split("\\")[-1].split('.')[1]          # from 'sample.mp4' just take 'mp4'
-
-OUTPUT_PATH = output_video_path + "\\" + file_name + '.' + file_ext
-
 weights = 'path/to/model_weight_file'
 configuration = 'path/to/model_config_file'
 classFile = 'path/to/object_class_file'
-
-FOUR_CC = cv2.VideoWriter_fourcc(*'MP4V')
-
-WIN_WIDTH = 1280
-WIN_HEIGHT = 720
-
-OUTPUT = cv2.VideoWriter(OUTPUT_PATH, FOUR_CC, 25.0, (WIN_WIDTH, WIN_HEIGHT))
 
 
 class ObjectDetection:
