@@ -2,19 +2,17 @@ import cv2
 import numpy as np
 
 # Variable Initialization
-video = r'C:\Users\ashut\PycharmProjects\NumPython\DataScience\Projects\CV\IMP Files\_ASSETS_\CityDriving_3.mp4'
-output_video_path = r'C:\Users\ashut\PycharmProjects\NumPython\DataScience\Projects\CV\IMP Files\_ASSETS_\Saved'
+video = 'path/to/video'
+output_video_path = 'path/to/output/folder'
 
-file_name = video.split("\\")[-1].split('.')[0]
-file_ext = video.split("\\")[-1].split('.')[1]
+file_name = video.split("\\")[-1].split('.')[0]         # from 'sample.mp4' just take 'sample'
+file_ext = video.split("\\")[-1].split('.')[1]          # from 'sample.mp4' just take 'mp4'
 
 OUTPUT_PATH = output_video_path + "\\" + file_name + '.' + file_ext
 
-MODEL = 'v3'
-
-weights = fr'C:\Users\ashut\PycharmProjects\NumPython\DataScience\Projects\CV\IMP Files\_ASSETS_\Models\Pre-trained\YOLO\Yolo_{MODEL}\yolo{MODEL}.weights'
-configuration = fr'C:\Users\ashut\PycharmProjects\NumPython\DataScience\Projects\CV\IMP Files\_ASSETS_\Models\Pre-trained\YOLO\Yolo_{MODEL}\yolo{MODEL}.cfg'
-classFile = r'C:\Users\ashut\PycharmProjects\NumPython\DataScience\Projects\CV\IMP Files\COCO_Names.txt'
+weights = 'path/to/model_weight_file'
+configuration = 'path/to/model_config_file'
+classFile = 'path/to/object_class_file'
 
 FOUR_CC = cv2.VideoWriter_fourcc(*'MP4V')
 
