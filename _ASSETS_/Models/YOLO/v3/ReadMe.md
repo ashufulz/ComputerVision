@@ -1,2 +1,3 @@
-You also need to download YoloV3 'weights' file which can be downloaded from the link below:
+The YoloV3 'weights' file size is too heavy to be uploaded here.
+So download it from here:
 https://pjreddie.com/darknet/yolo/
